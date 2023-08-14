@@ -92,13 +92,15 @@ function Body() {
   return (
     <>
        
-      <div>
+      <div style={{marginTop:'4px'}}>
 
       
         <div className="div1">
           <div className="row" style={{marginBottom:'10px'}}>
           {/* <hr style={{margin :'0px',border:'2px solid black'}} /> */}
-          <div style={{border:'2px solid #00338D',margin:'5px',width:'88vw'}}></div>
+          {/* <div style={{border:'2px solid #00338D',margin:'5px',width:'88vw'}}></div> */}
+          <div><h1 style={{color:'#00338D',fontWeight:'800',fontSize:'45px',letterSpacing:'',letterSpacing:'-3px',margin:'20px 1px 6px 0px'}}>Meet Genie!</h1>
+          <h5 style={{margin:'0px 0px 30px 0px',fontWeight:'500',color:'black'}}>Harness the power of Generative AI to super-charge your data analytics workflows.</h5></div>
            
            
            <div className="col-lg-2"></div>
