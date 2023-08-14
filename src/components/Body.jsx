@@ -88,10 +88,66 @@ function Body() {
     // console.log(datan);
   }, []);
 
+
   return (
     <>
+       
       <div>
+
+      
         <div className="div1">
+          <div className="row" style={{marginBottom:'10px'}}>
+          {/* <hr style={{margin :'0px',border:'2px solid black'}} /> */}
+          <div style={{border:'2px solid #00338D',margin:'5px',width:'88vw'}}></div>
+           
+           
+           <div className="col-lg-2"></div>
+           <div className="col-lg-6" style={{display:'flex',justifyContent:"space-between",marginLeft:'-8px'}}>
+           <button
+                      onClick={() => window.location.reload(false)}
+                        style={{
+                          marginTop:'0px',
+                          background: "#00338D",
+                          color: "whitesmoke",
+                          border: "2px solid #00338D",
+                          borderRadius: "12%",
+                          width: "200px",
+                          
+                        }}
+                      >
+                        Data Catalog
+                      </button> 
+                      <button
+                      // onClick={getNewData}
+                        style={{
+                          marginTop:'0px',
+                          background: "grey",
+                          color: "whitesmoke",
+                          border: "2px solid #00338D",
+                          borderRadius: "12%",
+                          width: "200px",
+                       
+                        }}
+                      >
+                        Data Generator
+                      </button> 
+                      <button
+                      // onClick={getNewData}
+                        style={{
+                          marginTop:'0px',
+                          background: "grey",
+                          color: "whitesmoke",
+                          border: "2px solid #00338D",
+                          borderRadius: "12%",
+                          width: "200px",
+                        
+                        }}
+                      >
+                        Data Analyst
+                      </button> 
+
+           </div>
+                </div>
           <div className="row">
             <div className="col-lg-2" style={{}}>
               <div
@@ -130,7 +186,7 @@ function Body() {
                 className="row"
                 style={{ border: "2px solid black", height: "70vh" }}
               >
-                <div className="col-lg-4 tablediv" style={{ height: "100%" }}>
+                <div className="col-lg-4 tablediv" style={{ height: "100%",overflow:"scroll" }}>
                   {item1 < 0 ? "" : <TableDetails data={tableDetails?.data} />}
                 </div>
                 <div
